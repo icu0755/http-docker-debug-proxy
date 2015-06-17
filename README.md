@@ -11,7 +11,7 @@ docker run \
     --link routific-vrp:dst \
     -e PORT=8688 \
     -p 8000:8000 \
-    acroca:http-docker-debug
+    acroca:http-debug-proxy
 ```
 
 The `dst` linked container will be the container receiving the proxied data. the `PORT` env variable is the target port in `dst` that will receive the data.
