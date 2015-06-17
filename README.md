@@ -8,7 +8,7 @@ To run it:
 docker run \
     -t \
     --rm \
-    --link routific-vrp:dst \
+    --link YOUR_CONTAINER:dst \
     -e PORT=8688 \
     -p 8000:8000 \
     acroca:http-debug-proxy
