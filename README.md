@@ -10,8 +10,11 @@ docker run \
     --rm \
     --link YOUR_CONTAINER:dst \
     -e PORT=8688 \
+    -e HOST=example.local \
     -p 8000:8000 \
-    acroca:http-debug-proxy
+    http-debug-proxy
 ```
 
-The `dst` linked container will be the container receiving the proxied data. the `PORT` env variable is the target port in `dst` that will receive the data.
+The `dst` linked container will be the container receiving the proxied data. 
+The `PORT` and `HOST` env variables are the target port and host in `dst` 
+that will receive the data.
